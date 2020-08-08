@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 08, 2020 at 07:28 AM
+-- Generation Time: Aug 08, 2020 at 07:35 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -93,13 +93,6 @@ CREATE TABLE `products` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `products`
---
-
-INSERT INTO `products` (`id`, `supplier_id`, `category_id`, `brand_id`, `name`, `quantity`, `product_sku`, `image`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
-(11, 8, NULL, NULL, 'Soumtra Sarker', 6, '76576544444444', '1596861906.jpg', NULL, NULL, '2020-08-07 22:45:06', '2020-08-07 22:45:06');
-
 -- --------------------------------------------------------
 
 --
@@ -144,13 +137,6 @@ CREATE TABLE `suppliers` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `suppliers`
---
-
-INSERT INTO `suppliers` (`id`, `supplier_name`, `mobile_no`, `email`, `address`, `status`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
-(8, 'Soumtra Sarker', '01766615681', 'Sarkerpritam24@gmail.com', 'Dhaka Bangladesh', 0, NULL, NULL, '2020-08-07 22:44:45', '2020-08-07 22:44:45');
-
 -- --------------------------------------------------------
 
 --
@@ -167,13 +153,6 @@ CREATE TABLE `users` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(2, 'Soumtra Sarker', 'Sarkerpritam24@gmail.com', NULL, '$2y$10$tWNgVUANX0/yRAx2V0Mpx.H7lC64mo9xtg4kf7kp//8rHDt49sKUq', NULL, '2020-08-07 04:50:01', '2020-08-07 04:50:01');
 
 --
 -- Indexes for dumped tables
